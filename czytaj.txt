@@ -1,0 +1,26 @@
+1. pobraæ progran dla windowsa
+Git-1.7.9-preview20120201.exe
+ustawienia standardowe
+
+2. uruchamiæ git bash
+ssh-keygen -t rsa -C "your_email@youremail.com"		# generowanie kluczy
+
+dodaæ klucz pobliczny na dithubie
+
+ssh -T git@github.com					# po³¹czenie siê 
+
+git config --global user.name "Firstname Lastname"
+git config --global user.email "your_email@youremail.com"
+
+git config --global github.user username
+git config --global github.token 0123456789yourf0123456789token
+
+tworzenie projektu
+mkdir test
+  cd test
+  git init
+  touch README
+  git add README
+  git commit -m 'first commit'
+  git remote add origin git@github.com:muzzy1/test.git
+  git push -u origin master
